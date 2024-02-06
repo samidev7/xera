@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
+import { socials } from '../constants';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
@@ -42,16 +42,18 @@ const Footer = () => (
             Copyright © 2024 XERA. All rights reserved.
           </p>
 
-          {/* <div className="flex gap-4">
+          <div className="flex gap-4">
             {socials.map((social) => (
-              <img
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
+              <a href={social.link} target="_blank" rel="noreferrer">
+                <img
+                  key={social.name}
+                  src={social.url}
+                  alt={social.name}
+                  className="w-[24px] h-[24px] object-contain cursor-pointer"
+                />
+              </a>
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
