@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -44,6 +44,16 @@ const World = () => (
           <img src="people-03.png" alt="people" className="w-full h-full" />
         </div>
       </motion.div>
+    </motion.div>
+    <motion.div
+      variants={zoomIn(0.4, 1)}
+      className="lg:block hidden absolute right-[0%] top-[10%]"
+    >
+      <img
+        src="/Cube04.png"
+        alt="stamp"
+        className="w-[520px] h-[520px] object-contain"
+      />
     </motion.div>
   </section>
 );

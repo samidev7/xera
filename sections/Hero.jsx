@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
 // Libraries
-import { motion } from "framer-motion";
-import Image from "next/image";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 // Utils
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 // Images
-import aboutHero from "../assets/logos/aboutHero.png";
+import aboutHero from '../assets/logos/aboutHero.png';
 
 // Styles
-import styles from "../styles";
+import styles from '../styles';
 
 const Hero = () => (
   <section className={`${styles.yPaddings}`}>
@@ -29,7 +29,7 @@ const Hero = () => (
       </div>
 
       <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+        variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <div className="flex justify-center items-center">
