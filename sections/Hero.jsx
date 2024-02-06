@@ -39,6 +39,16 @@ const Hero = () => (
             className="w-full object-top sm:h-[500px] h-[350px] object-contain z-10 relative heroImage"
           />
         </div>
+        <motion.div
+          variants={slideIn('right', 'tween', 0.3, 2)}
+          className="w-full flex justify-end  -mt-[200px] ml-[50px]  relative z-10"
+        >
+          <img
+            src="/Sphere05.png"
+            alt="stamp"
+            className="sm:w-[355px] w-[300px] sm:h-[355px] h-[300px] object-contain"
+          />
+        </motion.div>
       </motion.div>
     </motion.div>
   </section>

@@ -45,16 +45,6 @@ const World = () => (
         </div>
       </motion.div>
     </motion.div>
-    <motion.div
-      variants={zoomIn(0.4, 1)}
-      className="lg:block hidden absolute right-[0%] top-[10%]"
-    >
-      <img
-        src="/Cube04.png"
-        alt="stamp"
-        className="w-[520px] h-[520px] object-contain"
-      />
-    </motion.div>
   </section>
 );
 

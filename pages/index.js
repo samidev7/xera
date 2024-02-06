@@ -10,14 +10,14 @@ import {
   SectionThree,
   SectionFour,
 } from '../sections';
-import Slider from '../sections/Slider';
+// import Slider from '../sections/Slider';
 
 const Home = () => (
   <div className="bg-black overflow-hidden">
     <Navbar />
     <Hero />
     <div className="relative">
-      <Slider />
+      {/* <Slider /> */}
       <About />
       <div className="gradient-03 z-0" />
       <Explore />
